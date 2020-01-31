@@ -1,0 +1,10 @@
+contribution of different developers may branch and merge during the VCS process
+choosing a vcs 
+    how many files and developers are likely to be involved in the project
+    is there a database needed? does it needs to be a powerful databaase?
+    
+git workflow
+    working tree -git add- index/staging area -git commit- local branch -git push- remote branch 
+
+directory - identified as your repository 
+
