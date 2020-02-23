@@ -35,7 +35,7 @@ input, select{
 }
 
 .container {
-    margin-top:10%;
+    margin-top:6.9%;
     background-color: black;
     border: ivory; 
     padding: 2px; 
@@ -65,9 +65,7 @@ form {
 }
 
 
-#stat {
-
-}
+ 
 /*clear class*/
 .row:after { 
     content: "";
@@ -77,15 +75,30 @@ form {
 
 /*when screen is less than 600px, two buttons stack*/
 @media screen and (max-width: 600px) {
-    .col-30, .col-40, input[type=submit] {
+    .col-30, .col-40, input[type=submit], progress {
         width: 100%;
         margin-top: 0;
     }
 }
 progress {
-    margin-left:15%;
-    background-color: #333;
-    color:rgb(255, 62, 62);
-    border:none;
-    width: 85%; 
+    /*-webkit-appearance: none;
+    appearance: none; */
+    width: 100%; 
 }
+
+progress::-webkit-progress-bar {
+    background-color: rgb(80, 79, 79);
+    border-radius: 2px;
+    box-shadow: 0 5px 10px rgba(206, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-value {
+    background-image:
+        -webkit-linear-gradient(-90deg, 
+                            transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                            rgba(0,0, 0, .1) 66%, transparent 66%),
+        -webkit-linear-gradient(top, transparent 66%,rgba(255, 255, 255, 0.1) 66%, 
+                            transparent 33%,rgb(0, 0, 0, .1) 33%),
+        -webkit-linear-gradient(right, rgb(51, 255, 0), #f44); 
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%; 
+  }  

@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title> 
-    <script src="script.js"></script>
+    <script src="script.js"> 
+        // var pass = document.getElementById('pass');
+        // pass.addEventListener('keyup', function() {passStrength(pass.value)});
+        
+       
+    
+    </script>
     <link rel="stylesheet" type="text/css" href="dusk.css">
 </head>
 <body>
@@ -28,26 +34,26 @@
                 </div> 
                 <div class="col-30">
                     <div class="row">
-                        <div style="width: 100%;">
-                            <progress max="" value="0" id="strength"></progress>
+                        <div style="margin: 0 15px;" >
+                            <progress max="100" value="" id="strength"></progress>
                         </div> 
                     </div>
                     <div class="row">
-                        <div style="width: 100%;">
-                            <p id="strengthLabel">Strength: <i>Strong</p></i>
+                        <div style="width:  ;">
+                            <p >Strength: <i><span id="strengthLabel"></span></i></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-30">
-                    <label for="conf-pass">Confirm Password</label>
+                    <label for="confPass`                                                                                                                                                                                                                                                                                                                                                                                                   ">Confirm Password</label>
                 </div>
                 <div class="col-40">
                     <input type="password" id="confPass" required maxlength="25">
                 </div> 
                 <div class="col-30">
-                    <b><p id="stat" ></p></b>
+                    <p id="stat" > </p> 
                 </div>
             </div> 
             <div class="row">
@@ -57,8 +63,8 @@
                 <div class="col-40">
                     <select name="" id="gender" required>
                         <option value="" selected disabled></option>
-                        <option value="">Male</option>
-                        <option value="">Female</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
                     </select>
                 </div> 
             </div>
@@ -71,7 +77,7 @@
                 </div> 
             </div>
             <div class="row">
-                <input type="submit" id="register" onclick="//passValidation()" value="Register">
+                <input type="submit" id="register" onclick="" value="Register">
             </div>
             <div class="row">
                 
@@ -80,9 +86,13 @@
 
     </div>
 </body>
+<script  > 
+    var pass = document.getElementById('pass');
+    pass.addEventListener('keyup', function() {passStrength(pass.value)});
+    
+   
 
-<script>
-    //pass.addEventListener('keyup', passValidation);
 </script>
+
  
 </html>
