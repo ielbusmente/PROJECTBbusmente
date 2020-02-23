@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title> 
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="dusk.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form action="" onsubmit="return submitValidation()" method="">
+            <div class="row">
+                <div class="col-30">
+                    <label for="login">Login</label>
+                </div>
+                <div class="col-40">
+                    <input type="text" id="login"  required maxlength="20">
+                </div> 
+            </div> 
+            <div class="row">
+                <div class="col-30">
+                    <label for="pass">Password</label>
+                </div>
+                <div class="col-40">
+                    <input type="password" id="pass" required maxlength="25" >
+                </div> 
+                <div class="col-30">
+                    <div class="row">
+                        <div style="width: 100%;">
+                            <progress max="" value="0" id="strength"></progress>
+                        </div> 
+                    </div>
+                    <div class="row">
+                        <div style="width: 100%;">
+                            <p id="strengthLabel">Strength: <i>Strong</p></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-30">
+                    <label for="conf-pass">Confirm Password</label>
+                </div>
+                <div class="col-40">
+                    <input type="password" id="confPass" required maxlength="25">
+                </div> 
+                <div class="col-30">
+                    <b><p id="stat" ></p></b>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-30">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="col-40">
+                    <select name="" id="gender" required>
+                        <option value="" selected disabled></option>
+                        <option value="">Male</option>
+                        <option value="">Female</option>
+                    </select>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-30">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-40">
+                    <input type="email" id="email" required>
+                </div> 
+            </div>
+            <div class="row">
+                <input type="submit" id="register" onclick="//passValidation()" value="Register">
+            </div>
+            <div class="row">
+                
+            </div>
+        </form>
+
+    </div>
+</body>
+
+<script>
+    //pass.addEventListener('keyup', passValidation);
+</script>
+ 
+</html>
