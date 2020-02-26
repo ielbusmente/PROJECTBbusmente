@@ -30,18 +30,27 @@ function submitValidation() {
 
 
 function passStrength(password) { 
-    var st = document.getElementById('strength');
-    var stl = document.getElementById('strengthLabel'); 
-    var cou = 0; 
+    var st = document.getElementById('strength')
+    var stl = document.getElementById('strengthLabel')  
+    var cou = 0
     
     if (password.match(/[a-z]+/)) cou += 1 
     if (password.match(/[0-9A-Z]+/)) cou += 1  
     if (password.match(/[~<>?]+/)) cou += 1 
     if (password.match(/[!@#$%^&*()]+/)) cou += 1  
     if (password.length>4) cou += 1  
-    if (password.length>7) cou += 1  
+    if (password.length>7) cou += 1     
+    /*
 
+     st.backgroundImage = `-webkit-linear-gradient(-90deg, transparent 33%, 
+        rgba(0, 0, 0, .1) 33%, rgba(0,0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top, transparent 66%,
+        rgba(255, 255, 255, 0.1) 66%, transparent 33%, rgb(0, 0, 0, .1) 33%),
+    -webkit-linear-gradient(right, #f44, rgb(41, 119, 34))`;
 
+    
+    */
+   
     switch(cou) {
         case 0:  st.value = 0; stl.innerHTML = "";  break
         case 1:  st.value = 10; stl.innerHTML = "Weak";  break
@@ -51,5 +60,4 @@ function passStrength(password) {
         case 5:  st.value = 80; stl.innerHTML = "Strong"; break 
         case 6:  st.value = 100; stl.innerHTML = "Very Strong"; break
     } 
-    
-} 
+}  
