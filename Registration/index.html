@@ -4,25 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title> 
-    <script src="script.js"> 
-        // var pass = document.getElementById('pass');
-        // pass.addEventListener('keyup', function() {passStrength(pass.value)});
-        
-       
-    
-    </script>
+    <script src="script.js"></script>
     <link rel="stylesheet" type="text/css" href="dusk.css">
 </head>
-<body>
-    
+<body> 
     <div class="container">
-        <form action="" onsubmit="return submitValidation()" method="">
+        <form action="" onsubmit="return submitValidation()">
             <div class="row">
                 <div class="col-30">
-                    <label for="login">Login</label>
+                    <label for="login">Username</label>
                 </div>
                 <div class="col-40">
-                    <input type="text" id="login"  required maxlength="20">
+                    <input type="text" id="login" required maxlength="20">
                 </div> 
             </div> 
             <div class="row">
@@ -30,30 +23,30 @@
                     <label for="pass">Password</label>
                 </div>
                 <div class="col-40">
-                    <input type="password" id="pass" required maxlength="25" >
+                    <input type="password" id="pass" required maxlength="25">
                 </div> 
                 <div class="col-30">
                     <div class="row">
-                        <div style="margin: 0 15px;" >
+                        <div style="margin: 0 15px;">
                             <progress max="100" value="" id="strength"></progress>
                         </div> 
                     </div>
                     <div class="row">
-                        <div style="width:  ;">
-                            <p >Strength: <i><span id="strengthLabel"></span></i></p>
+                        <div>
+                            <p>Strength: <i><span id="strengthLabel"></span></i></p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-30">
-                    <label for="confPass`                                                                                                                                                                                                                                                                                                                                                                                                   ">Confirm Password</label>
+                    <label for="confPass">Confirm Password</label>
                 </div>
                 <div class="col-40">
                     <input type="password" id="confPass" required maxlength="25">
                 </div> 
                 <div class="col-30">
-                    <p id="stat" > </p> 
+                    <p id="stat"></p> 
                 </div>
             </div> 
             <div class="row">
@@ -73,26 +66,20 @@
                     <label for="email">Email</label>
                 </div>
                 <div class="col-40">
-                    <input type="email" id="email" required>
+                    <input type="email" id="email">
                 </div> 
+                <div class="col-30">
+                    <p id="emailStat"></p> 
+                </div>
             </div>
             <div class="row">
-                <input type="submit" id="register" onclick="" value="Register">
-            </div>
-            <div class="row">
-                
-            </div>
-        </form>
-
+                <input type="submit" id="register" value="Register">
+            </div> 
+        </form> 
     </div>
 </body>
-<script  > 
-    var pass = document.getElementById('pass');
-    pass.addEventListener('keyup', function() {passStrength(pass.value)});
-    
-   
-
-</script>
-
- 
+    <script> 
+        var pass = document.getElementById('pass');
+        pass.addEventListener('keyup', function(){passStrength(pass.value)}); 
+    </script> 
 </html>

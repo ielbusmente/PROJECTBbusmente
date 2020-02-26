@@ -1,12 +1,15 @@
 var red = "rgb(255, 130, 130)";
 var green = "rgb(142, 255, 151)";
-var user = document.getElementById('login');
+
 
 
 function submitValidation() {    
     var pass = document.getElementById('pass');
     var confPass = document.getElementById('confPass');
     var str = document.getElementById('stat');  
+    var eStr = document.getElementById('emailStat');  
+    var email = document.getElementById('email');
+    var user = document.getElementById('login');
     if (pass.value != confPass.value) {
         pass.style.background = red;
         confPass.style.background = red;  
@@ -14,6 +17,12 @@ function submitValidation() {
         str.style.color = red;
         return false;
     }    
+    if (!(email.value.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/))) {
+        email.style.background = red; 
+        eStr.style.color = red;
+        eStr.innerHTML = "Invalid e-mail."
+        return false;
+    }
     alert(`Hello ${user.value.trim()}! You are now registered. Please check your email to co`
     + `nfirm your account.`);
     
