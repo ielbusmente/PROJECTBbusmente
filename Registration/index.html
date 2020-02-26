@@ -28,12 +28,11 @@
                 <div class="col-30">
                     <div class="row">
                         <div style="margin: 0 15px;">
-                            <progress max="100" value="" id="strength"></progress>
-                        </div> 
+                            <progress value="" id="strength"></progress>
+                        </div>
                     </div>
-                    <div class="row"> 
-                        <p >Strength: <i><span id="strengthLabel"> 
-                         </span></i></p> 
+                    <div class="row">
+                        <p >Strength: <i><span id="strengthLabel"></span></i></p>
                     </div>
                 </div>
             </div>
@@ -43,11 +42,11 @@
                 </div>
                 <div class="col-40">
                     <input type="password" id="confPass" required maxlength="25">
-                </div> 
-                <div class="col-30">
-                    <p id="stat"></p> 
                 </div>
-            </div> 
+                <div class="col-30">
+                    <p id="stat"></p>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-30">
                     <label for="gender">Gender</label>
@@ -58,7 +57,7 @@
                         <option value="1">Male</option>
                         <option value="2">Female</option>
                     </select>
-                </div> 
+                </div>
             </div>
             <div class="row">
                 <div class="col-30">
@@ -66,19 +65,19 @@
                 </div>
                 <div class="col-40">
                     <input type="email" id="email">
-                </div> 
+                </div>
                 <div class="col-30">
-                    <p id="emailStat"></p> 
+                    <p id="emailStat"></p>
                 </div>
             </div>
             <div class="row">
                 <input type="submit" id="register" value="Register">
-            </div> 
-        </form> 
+            </div>
+        </form>
     </div>
 </body>
-    <script> 
+    <script>
         var pass = document.getElementById('pass');
-        pass.addEventListener('keyup', function(){passStrength(pass.value)}); 
-    </script> 
+        pass.addEventListener('keyup', function(){passStrength(pass.value)});
+    </script>
 </html>
