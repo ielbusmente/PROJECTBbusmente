@@ -1,20 +1,19 @@
-git init
-	start 
-git pull <link> master
-	pull repo from link 
+INITIAL
+	git init
+		start 
+	git pull <link> master
+		pull repo from link 
+	git remote add origin <link>
+		before pushing 
+	git push -u origin master
+		initial push  
+
+
 git add .
 	add all changes 
 git commit -m "commit message"
 	commit before pushing 
 git status 
 	checking 
-git remote add origin <link>
-	before pushing 
-git push -u origin master
-	
-	
-	
-	
-	
-	
-	
+git push 
+	kapag oks na magcommit 
