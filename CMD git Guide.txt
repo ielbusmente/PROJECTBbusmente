@@ -1,0 +1,20 @@
+git init
+	start 
+git pull <link> master
+	pull repo from link 
+git add .
+	add all changes 
+git commit -m "commit message"
+	commit before pushing 
+git status 
+	checking 
+git remote add origin <link>
+	before pushing 
+git push -u origin master
+	
+	
+	
+	
+	
+	
+	
